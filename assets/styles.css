@@ -134,7 +134,19 @@ p {
     color: var(--purple-like);
 }
 
-ul, li {
+
+ul {
     list-style: none;
     font-family: var(--ubuntu);
+}
+
+.fa-hand-point-right{
+    color: #ffac33;
+    font-size: 3em;
+}
+
+li::before {
+    content: '👉';
+    font-size: 1.2em;
+    padding-right: 0.3em;
 }
