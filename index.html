@@ -14,9 +14,13 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+
     <!--External assets-->
 
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/nav.css">
   </head>
 
   <body>
@@ -53,7 +57,7 @@
 
     <div id="about" class="about-section">
         
-      <h1 class="header__second">About Our Services</h1>
+      <h1 class="header__second">About us</h1>
         
         <p>
           We are the leading and trusted Solar energy equipment dealers in Kelakam, Kannur. Our products includes Inverter & Battery, Solar Panel, Solar Water Heater, Water purifier, Plumbing and Electrical works. Our services are available 24x7.
@@ -75,16 +79,32 @@
 
     <div class="images-container">
         <div id="images">
-            <h1 class="header__second">Works</h1>
-            <img src="/images/lorem.jpg" alt="waiting for image to load">
-            <img src="/images/lorem.jpg" alt="waiting for image to load">
-            <img src="/images/lorem.jpg" alt="waiting for image to load">
-            <img src="/images/lorem.jpg" alt="waiting for image to load">
+          
+          <h1 class="header__second">Our Works</h1>
+
+          <div id="image-slider" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/solar/panel.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/solar/solar1.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/solar/solar_panel.jpg">
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
     </div>
-
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
   <script src="https://kit.fontawesome.com/54f4f6d4db.js" crossorigin="anonymous"></script>
   <script src="assets/script.js"></script>
-
+  <script src="assets/external/splide.js"></script>
 </html>
