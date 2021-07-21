@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+#profile_cards_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5FFFA;
+}
+
+.profile_pic_container {
+    border-bottom: 3px solid rgb(114, 22, 233);
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+    /*ℹ️ This should be same as the border-radius for profile_card div*/
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+    height: 11em;
+    position: relative;
+}
+
+.profile_pic_container img {
+    position: absolute; /*For centering */
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+
+    border-radius: 50%;
+    border: 3px solid rgb(212, 28, 212);
+    height: 8em;
+    margin-top: 1.3em;
+}
+
+.profile_card {
+    width: 76%;
+    border-radius: 1.3em;
+    /*ℹ️ This should be same as the border-radius for profile_pic_container div*/
+    margin: 1em 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.profile_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.02);
+}
+
+
+.profile_info {
+    text-align: center;
+    padding: 3px;
+}
+
+
+.profile_info h4,h5 {
+    font-family: 'Nunito', sans-serif;
+}
+.profile_info h4 {
+    font-size: 1.5rem;
+    margin-top: 10px !important;
+    color: #2D1E2F;
+    overflow-wrap: break-word;
+}
+
+.profile_info h5 {
+    font-size: 1.2rem;
+    color: #F72C25;
+    
+}
+
+.profile_info p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.profile_info p:last-child {
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    overflow-wrap: break-word;
+}
+.profile_info p a{
+    text-decoration: none;
+}
+
+.profile_info p a:hover{
+    text-decoration: none;
+    color: rgb(212, 28, 212);
+}
