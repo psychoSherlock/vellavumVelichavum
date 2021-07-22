@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+</body>
+<div class="splide">
+	<div class="splide__track">
+		<div class="splide__list">
+
+
+         <div class="profile_card splide__slide">
+            <div class="profile_pic_container">
+                <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+            </div>
+
+            <div class="profile_info">
+                <h4>Athul Prakash NJ</h5>
+                <h5>Cyber Security Researcher</h5>
+                <p>Phone: 1234567890</p>
+                <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+            </div>
+        </div>
+        
+
+        <div class="profile_card splide__slide">
+         <div class="profile_pic_container">
+             <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+         </div>
+
+         <div class="profile_info">
+             <h4>Athul Prakash NJ</h5>
+             <h5>Cyber Security Researcher</h5>
+             <p>Phone: 1234567890</p>
+             <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+         </div>
+     </div>
+
+
+     <div class="profile_card splide__slide">
+      <div class="profile_pic_container">
+          <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+      </div>
+
+      <div class="profile_info">
+          <h4>Athul Prakash NJ</h5>
+          <h5>Cyber Security Researcher</h5>
+          <p>Phone: 1234567890</p>
+          <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+      </div>
+  </div>
+
+
+  <div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+
+<div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+
+<div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+
+<div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+
+<div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+
+<div class="profile_card splide__slide">
+   <div class="profile_pic_container">
+       <img src="profile.jpg" alt="Staff Member" id="profile-picture">
+   </div>
+
+   <div class="profile_info">
+       <h4>Athul Prakash NJ</h5>
+       <h5>Cyber Security Researcher</h5>
+       <p>Phone: 1234567890</p>
+       <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
+   </div>
+</div>
+
+
+      </div>
+	</div>
+</div>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+<script>
+   slideOptions = {
+  type: "loop",
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  speed: 1000,
+  arrows: false,
+  autoHeight: true,
+  width: "80%"
+};
+
+var elms = document.getElementsByClassName("splide");
+
+// even class, we need a loop
+document.addEventListener("DOMContentLoaded", function () {
+  for (var i = 0, len = elms.length; i < len; i++) {
+    new Splide(elms[ i ], slideOptions).mount();
+  }
+});
+
+</script>

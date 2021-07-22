@@ -5,7 +5,7 @@
 
 
 :root{
-    --purple-like:rgba(153, 47, 252, 0.959);
+    --purple-like:#7209b7;
     --font-normal:'Noto Sans JP', sans-serif;
     --pink-like: #f72585;
     --ubuntu:'Ubuntu', sans-serif;
@@ -100,7 +100,7 @@ body {
     margin: 0 auto;
 }
 
-.header__second,h2{
+.header__second{
     font-family: var(--little-heading);
     text-decoration: underline;
     text-decoration-color: var(--pink-like);
