@@ -1,182 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Vellavum Velichavum Kelakam</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <head>
+      <title>Vellavum Velichavum Kelakam</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!--External Assets-->
+      <link
+         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+      <!--External assets-->
+      <link rel="stylesheet" href="assets/profile_cards.css">
+      <link rel="stylesheet" href="assets/styles.css">
+      <link rel="stylesheet" href="assets/nav.css">
+   </head>
+   <body>
+      <!--👇Navbar👇-->
+      <nav class="nav">
+         <a href="#body-heading" class="nav__link  nav__link--active">
+         <i class="material-icons nav__icon">home</i>
+         <span class="nav__text">Home</span>
+         </a>
+         <a href="#services" class="nav__link">
+         <i class="material-icons nav__icon">build</i>
+         <span class="nav__text">Services</span>
+         </a>
+         <a href="#team" class="nav__link">
+            <i class="material-icons nav__icon" id="group_icon">groups</i>
+            <span class="nav__text">The Team</span>
+         </a>
+         <a href="#images" class="nav__link">
+         <i class="material-icons nav__icon">photo_library</i>
+         <span class="nav__text">Works</span>
+         </a>
+         <a href="#" class="nav__link">
+         <i class="material-icons nav__icon">call</i>
+         <span class="nav__text">Contact</span>
+         </a>
+      </nav>
+      <!--☝️Navbar☝️-->
 
-    <!--External Assets-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
-
-    <!--External assets-->
-    <link rel="stylesheet" href="assets/profile_cards.css">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/nav.css">
-  </head>
-
-  <body>
-
-    
-    <!--👇Navbar👇-->
-    <nav class="nav">
-      <a href="#body-heading" class="nav__link  nav__link--active">
-        <i class="material-icons nav__icon">home</i>
-        <span class="nav__text">Home</span>
-      </a>
-      <a href="#services" class="nav__link">
-        <i class="material-icons nav__icon">build</i>
-        <span class="nav__text">Services</span>
-      </a>
-      <a href="#images" class="nav__link">
-        <i class="material-icons nav__icon">photo_library</i>
-        <span class="nav__text">Works</span>
-      </a>
-      <a href="#" class="nav__link">
-        <i class="material-icons nav__icon">call</i>
-        <span class="nav__text">Contact</span>
-      </a>
-    </nav>
-    <!--☝️Navbar☝️-->
-
-    <div id="body-heading">
-      <img src="/images/banner.jpg" alt="NPS vellavum velichavum">
-        <div class="heading-elements">
+      <div id="body-heading">
+         <img src="/images/banner.jpg" alt="NPS vellavum velichavum">
+         <div class="heading-elements">
             <h1>Vellavum Velichavum Kelakam</h1>
-        </div>
-        <div class="break"></div>
-    </div>
-
-    <div id="about" class="about-section">
-        
-      <h1 class="header__second">About us</h1>
-        
-        <p>
-          We are the leading and trusted Solar energy equipment dealers in Kelakam, Kannur. All solar systems on grid, off grid and fencing are completed with utmost responsibility. Our products includes Inverter & Battery, Solar Panel, Solar Water Heater, Water purifier, Plumbing and Electrical works. All our products are equipped with latest and advanced technology. Electrical and Plumbing works will be completed responsibly. We keep rigorous control on incoming inception, production processes, finished goods inspection and all relative process. Our services are available 24x7.
-        </p>
-
-        <h2 class="header__second">Our Team</h2>
-        <div id="profile_cards_container">
-
-          <div class="profile_card">
-              <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" id="profile-picture">
-              </div>
-  
-              <div class="profile_info">
-                  <h4>Athul Prakash</h5>
+         </div>
+         <div class="break"></div>
+      </div>
+      <div id="about" class="about-section">
+         <h1 class="header__second">About us</h1>
+         <p>
+            We are the leading and trusted Solar energy equipment dealers in Kelakam, Kannur. All solar systems on grid, off grid and fencing are completed with utmost responsibility. Our products includes Inverter & Battery, Solar Panel, Solar Water Heater, Water purifier, Plumbing and Electrical works. All our products are equipped with latest and advanced technology. Electrical and Plumbing works will be completed responsibly. We keep rigorous control on incoming inception, production processes, finished goods inspection and all relative process. Our services are available 24x7.
+         </p>
+      </div>
+         <h2 class="header__second" id="team">Our Team</h2>
+         <div id="profile_cards_container">
+            <div class="profile_card">
+               <div class="profile_pic_container">
+                  <img src="https://i.stack.imgur.com/kfbSQ.png?s=328&g=1" alt="Staff Member" class="profile-picture">
+               </div>
+               <div class="profile_info">
+                  <h4>Athul Prakash</h4>
                   <h5>Cyber Security Researcher and Web Developer</h5>
                   <p>Phone: 1234567890</p>
                   <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
-              </div>
-          </div>
-  
-          <div class="profile_card">
-              <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" id="profile-picture">
-              </div>
-  
-              <div class="profile_info">
+               </div>
+            </div>
+            <div class="profile_card">
+               <div class="profile_pic_container">
+                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+               </div>
+               <div class="profile_info">
                   <h4>Lorem Ipsum</h4>
                   <h5>Role</h5>
                   <p>Phone: 1234567890</p>
                   <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-              </div>
-          </div>
-
-          <div class="profile_card">
-            <div class="profile_pic_container">
-                <img src="images/sample/profile.jpg" alt="Staff Member" id="profile-picture">
+               </div>
             </div>
-
-            <div class="profile_info">
-                <h4>Lorem Ipsum</h4>
-                <h5>Role</h5>
-                <p>Phone: 1234567890</p>
-                <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+            <div class="profile_card">
+               <div class="profile_pic_container">
+                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+               </div>
+               <div class="profile_info">
+                  <h4>Lorem Ipsum</h4>
+                  <h5>Role</h5>
+                  <p>Phone: 1234567890</p>
+                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+               </div>
             </div>
-        </div>
-
-        <div class="profile_card">
-          <div class="profile_pic_container">
-              <img src="images/sample/profile.jpg" alt="Staff Member" id="profile-picture">
-          </div>
-
-          <div class="profile_info">
-              <h4>Lorem Ipsum</h4>
-              <h5>Role</h5>
-              <p>Phone: 1234567890</p>
-              <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-          </div>
+            <div class="profile_card">
+               <div class="profile_pic_container">
+                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+               </div>
+               <div class="profile_info">
+                  <h4>Lorem Ipsum</h4>
+                  <h5>Role</h5>
+                  <p>Phone: 1234567890</p>
+                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+               </div>
+            </div>
+            <div class="profile_card">
+               <div class="profile_pic_container">
+                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+               </div>
+               <div class="profile_info">
+                  <h4>Lorem Ipsum</h4>
+                  <h5>Role</h5>
+                  <p>Phone: 1234567890</p>
+                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+               </div>
+            </div>
+         </div>
+      <div class="break"></div>
+      <div class="images-container">
+         <div id="images">
+            <h1 class="header__second">Our Works</h1>
+            <div id="image-slider" class="splide">
+               <div class="splide__track">
+                  <ul class="splide__list">
+                     <li class="splide__slide">
+                        <img src="images/solar/panel.jpg">
+                     </li>
+                     <li class="splide__slide">
+                        <img src="images/solar/solar1.jpg">
+                     </li>
+                     <li class="splide__slide">
+                        <img src="images/solar/solar_panel.jpg">
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </div>
-
-      <div class="profile_card">
-        <div class="profile_pic_container">
-            <img src="images/sample/profile.jpg" alt="Staff Member" id="profile-picture">
-        </div>
-
-        <div class="profile_info">
-            <h4>Lorem Ipsum</h4>
-            <h5>Role</h5>
-            <p>Phone: 1234567890</p>
-            <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-        </div>
-    </div>
-
-      </div>
-
-        <div id="services">
-          <h2>Our Services</h2>
-          <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
-            <li>Service 4</li>
-            <li>Service 5</li>
-        </div>
-
-        </ul>
-    </div>
-    <div class="break"></div>
-
-    <div class="images-container">
-        <div id="images">
-          
-          <h1 class="header__second">Our Works</h1>
-
-          <div id="image-slider" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="images/solar/panel.jpg">
-                </li>
-                <li class="splide__slide">
-                  <img src="images/solar/solar1.jpg">
-                </li>
-                <li class="splide__slide">
-                  <img src="images/solar/solar_panel.jpg">
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-    </div>
-  </body>
-
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
-
-  <script src="https://kit.fontawesome.com/54f4f6d4db.js" crossorigin="anonymous"></script>
-  <script src="assets/script.js"></script>
-  <script src="assets/external/splide.js"></script>
-
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+   <script src="https://kit.fontawesome.com/54f4f6d4db.js" crossorigin="anonymous"></script>
+   <script src="assets/script.js"></script>
+   <script src="assets/external/splide.js"></script>
 </html>
