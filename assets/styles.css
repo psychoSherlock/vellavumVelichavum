@@ -7,6 +7,7 @@
 :root{
     --purple-like:rgba(153, 47, 252, 0.959);
     --font-normal:'Noto Sans JP', sans-serif;
+    --pink-like: #f72585;
     --ubuntu:'Ubuntu', sans-serif;
     --little-heading: 'Encode Sans SC', sans-serif;
 }
@@ -20,7 +21,7 @@ body {
 }
 
 .break {
-    background-color:tomato;
+    background-color: #f77f00;
     height: 3px;
     display: block;
     margin: auto;
@@ -40,14 +41,14 @@ body {
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    margin-top: -21px;
+    margin-top: -20px;
     text-align: center;
 }
 
 #body-heading img {
     margin-top: 3.5em;
     vertical-align: middle;
-    height: 10.5em;
+    width: 85%;
     animation: slide-header-from-top 0.7s forwards ease-out;
     box-sizing: border-box;
     border-radius: 2%;
@@ -63,19 +64,34 @@ body {
     color: white;
 }
 
+
 @keyframes slide-header-from-top {
     0% {margin-top: -10em;opacity: 0;}
     80%{opacity: 1;}
     100%{margin-top: 2.5em;}
 }
 
-
 .about-section {
-    margin: 1em;
+    background-color: #212529;
+    margin: 0;
+    padding-bottom: 1em;
 }
 
-p {
+.about-section .header__second {
+    margin-top: 0;
+}
+
+.about-section  p {
     font-family: var(--font-normal);
+    margin: 1.3em;
+    color: #fff;
+}
+
+.about-section > p::first-letter {
+    color: var(--pink-like);
+    display: block;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 
@@ -86,6 +102,9 @@ p {
 
 .header__second,h2{
     font-family: var(--little-heading);
+    text-decoration: underline;
+    text-decoration-color: var(--pink-like);
+    text-underline-offset: 3px;
     text-align: center;
     color: var(--purple-like);
 }
