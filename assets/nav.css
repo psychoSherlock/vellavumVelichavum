@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Noto+Sans+JP&display=swap");
 
 :root {
-  --purple-like: rgba(153, 47, 252, 0.959);
+  --purple-like:rgba(129, 2, 247, 0.96);
   --font-normal: "Noto Sans JP", sans-serif;
   --ubuntu: "Ubuntu", sans-serif;
   --little-heading: "Encode Sans SC", sans-serif;

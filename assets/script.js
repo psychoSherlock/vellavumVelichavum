@@ -8,3 +8,6 @@ const contactIcon = document.getElementById('contact__icon')
 setInterval(function () {
     contactIcon.classList.toggle('shake')
 },shakeTimeOut)
+
+
+
