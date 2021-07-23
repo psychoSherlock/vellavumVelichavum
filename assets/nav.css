@@ -1,59 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Noto+Sans+JP&display=swap");
 
-
-
-:root{
-    --purple-like:rgba(153, 47, 252, 0.959);
-    --font-normal:'Noto Sans JP', sans-serif;
-    --ubuntu:'Ubuntu', sans-serif;
-    --little-heading: 'Encode Sans SC', sans-serif;
+:root {
+  --purple-like: rgba(153, 47, 252, 0.959);
+  --font-normal: "Noto Sans JP", sans-serif;
+  --ubuntu: "Ubuntu", sans-serif;
+  --little-heading: "Encode Sans SC", sans-serif;
 }
 .nav {
-    z-index: 100;
+  z-index: 100;
 }
 .nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 55px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    display: flex;
-    overflow-x: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
 }
 
 .nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: var(--font-normal);
-    font-weight: bolder;
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-normal);
+  font-weight: bolder;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .nav__link:hover {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .nav__link--active {
-    color: var(--purple-like)
+  color: var(--purple-like);
 }
 
 .nav__icon {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 i#group_icon {
-    font-size: 21px;
+  font-size: 21px;
+}
+
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
