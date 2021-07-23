@@ -8,6 +8,11 @@
   --ubuntu: "Ubuntu", sans-serif;
   --little-heading: "Encode Sans SC", sans-serif;
 }
+
+#logo {
+  display: none;
+}
+
 .nav {
   z-index: 100;
 }
@@ -44,7 +49,7 @@
   background-color: #eeeeee;
 }
 
-.nav__link--active {
+.nav_active {
   color: var(--purple-like);
 }
 
@@ -56,7 +61,7 @@ i#group_icon {
   font-size: 21px;
 }
 
-
+/*Shake animation for contacts icon*/
 .shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
@@ -84,4 +89,65 @@ i#group_icon {
   60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+
+
+/*---------------------------DESKTOP DEVICES-------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 0 0 6em;
+  }
+
+  .nav {
+    height: 100%;
+    width: 6em;
+    overflow-y: auto;
+    left: 0;
+    display: block; /*Dont know why, but this seems to work*/
+  }
+
+  .nav__link {
+    min-height: 6em; /*For the height of induvidual icons*/
+  }
+
+  #logo {
+    display: block;
+  }
+  #logo img {
+    border-radius: 50%;
+    height: 3em;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  #logo__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: var(--font-normal);
+    font-weight: bolder;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+
+
+  }
+
+
+
 }

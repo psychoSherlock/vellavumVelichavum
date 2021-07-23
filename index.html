@@ -20,11 +20,18 @@
    <body>
       <!--👇Navbar👇-->
       <nav class="nav">
-         <a href="#body-heading" class="nav__link  nav__link--active">
+
+         <a href="#" id="logo">
+            <img src="/images/logo.png" alt="NPS LOGO">
+            <span id="logo__text">NPS</span>
+         </a>
+
+
+         <a href="#body-heading" class="nav__link  nav_active">
          <i class="material-icons nav__icon">home</i>
          <span class="nav__text">Home</span>
          </a>
-         <a href="#services" class="nav__link">
+         <a href="#about" class="nav__link">
          <i class="material-icons nav__icon">build</i>
          <span class="nav__text">Services</span>
          </a>
@@ -36,7 +43,7 @@
          <i class="material-icons nav__icon">photo_library</i>
          <span class="nav__text">Works</span>
          </a>
-         <a href="#" class="nav__link">
+         <a href="#images" class="nav__link">
          <i class="material-icons nav__icon" id="contact__icon">call</i>
          <span class="nav__text">Contact</span>
          </a>
@@ -169,6 +176,8 @@
          </div>
       </div>
    </body>
+   <script src="assets/external/jquery.min.js"></script>
+
    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
    <!--<script src="https://kit.fontawesome.com/54f4f6d4db.js" crossorigin="anonymous"></script>
    -->

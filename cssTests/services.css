@@ -1,0 +1,20 @@
+
+.features {/*May need to copy this for service section*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Change this for desktop */
+    grid-gap: 1rem;
+}
+
+.feature__item img {
+    width: 5.2em;
+    display: block;
+    margin: auto;
+}
+
+.feature__item p {
+    margin: 0.5em;
+}
+.feature__item {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 1em;
+}

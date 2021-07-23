@@ -9,10 +9,11 @@
   --ubuntu: "Ubuntu", sans-serif;
   --little-heading: "Encode Sans SC", sans-serif;
 }
-
+/*
 html {
   scroll-behavior: smooth;
 }
+*/
 
 body {
   margin: 0 0 55px 0;
@@ -130,22 +131,4 @@ body {
   }
 }
 
-
-
-
-#services ul {
-  list-style: none;
-  font-family: var(--ubuntu);
-}
-
-.fa-hand-point-right {
-  color: #ffac33;
-  font-size: 3em;
-}
-
-#services ul li::before {
-  content: "👉";
-  font-size: 1.2em;
-  padding-right: 0.3em;
-}
 
