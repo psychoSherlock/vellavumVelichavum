@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Noto+Sans+JP&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --dark-bg: #212529;
@@ -8,6 +9,7 @@
   --pink-like: #f72585;
   --ubuntu: "Ubuntu", sans-serif;
   --little-heading: "Encode Sans SC", sans-serif;
+  --lato: 'Lato', sans-serif;
   --dull-white: white;
 }
 /*
@@ -131,6 +133,52 @@ body {
     top: 0;
     opacity: 1;
   }
+}
+
+
+
+
+
+
+.services_and_features {
+  background-color: snow;
+}
+
+.services_and_features span {
+  color: rgba(129, 2, 247, 0.96);
+  text-align: left;
+  font-size: 200%;
+  padding-left: 0.3em;
+  font-family:  'Lato', sans-serif;
+  font-weight: bolder;
+  border-left: 3px solid #212529;
+  margin-left: 0.5em;
+}
+
+
+.features, .services {/*May need to copy this for service section*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+
+.feature__item {
+  margin: 1em 1em;
+  border-radius: 1em;
+}
+
+.feature__item img {
+  width: 5.2em;
+  display: block;
+  margin: auto;
+}
+
+.feature__item h4 {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #ff006e;
 }
 
 

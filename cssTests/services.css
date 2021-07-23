@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .services_and_features {
     background-color: snow;
 }
 
 .services_and_features span {
+    color: rgba(129, 2, 247, 0.96);
     text-align: left;
-    margin-left: 1em;
     font-size: 200%;
-    font-family: 'sans'
+    padding-left: 0.3em;
+    font-family:  'Lato', sans-serif;
+    font-weight: bolder;
+    border-left: 3px solid #212529;
 }
 
 
-.features {/*May need to copy this for service section*/
+.features, .services {/*May need to copy this for service section*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -34,7 +38,7 @@
 .feature__item h4 {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    color: #ff006e
+    color: #ff006e;
 }
 
 
