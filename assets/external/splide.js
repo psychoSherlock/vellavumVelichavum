@@ -9,7 +9,7 @@ slideOptions = {
   pauseOnFocus: false,
   speed: 1000,
   arrows: false,
-  pauseOnHover: true,
+  pauseOnHover:false,
 };
 
 var elms = document.getElementsByClassName("splide");
