@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.services_and_features {
+    background-color: snow;
+}
+
+.services_and_features span {
+    text-align: left;
+    margin-left: 1em;
+    font-size: 200%;
+    font-family: 'sans'
+}
+
 
 .features {/*May need to copy this for service section*/
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*Change this for desktop */
-    grid-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.feature__item {
+    margin: 1em 1em;
+    border-radius: 1em;
 }
 
 .feature__item img {
@@ -11,10 +31,10 @@
     margin: auto;
 }
 
-.feature__item p {
-    margin: 0.5em;
+.feature__item h4 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: #ff006e
 }
-.feature__item {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    border-radius: 1em;
-}
+
+
