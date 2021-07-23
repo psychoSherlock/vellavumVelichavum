@@ -6,10 +6,10 @@ slideOptions = {
   heightRatio: 0.5,
   autoplay: true,
   interval: 2000,
-  pauseOnHover: false,
   pauseOnFocus: false,
   speed: 1000,
-  arrows: false
+  arrows: false,
+  pauseOnHover: true,
 };
 
 var elms = document.getElementsByClassName("splide");

@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F5FFFA;
+    background-color: white;
     padding-bottom: 3em;
 }
 
@@ -38,12 +38,13 @@
     border-radius: 1.3em;
     /*ℹ️ This should be same as the border-radius for profile_pic_container div*/
     margin: 1em 0;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: transform 500ms ease;
 }
 
 .profile_card:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: scale(1.02);
+    transform: translateY(-3%);
     cursor: pointer;
 }
 
@@ -98,15 +99,16 @@
 
 @media only screen and (min-width: 768px) {
     .profile_card {
-        width: 22%;
+        width: 24%; /*May need to change this for larger desktop*/
         min-width: 20%;
         margin: 1em 1em;
-        
+        min-height: fit-content;
     }
 
     #profile_cards_container {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
 

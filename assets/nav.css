@@ -51,6 +51,8 @@
 
 .nav_active {
   color: var(--purple-like);
+  border-top: ridge 1.5px var(--purple-like);
+  transition: border-top 100ms ease-in-out;
 }
 
 .nav__icon {
@@ -99,6 +101,14 @@ i#group_icon {
     margin: 0 0 0 6em;
   }
 
+
+  
+  .nav_active {
+    border-top:none;
+    border-right: ridge 1.5px var(--purple-like);
+    transition: border-right 100ms ease-out;
+  }
+
   .nav {
     height: 100%;
     width: 6em;
@@ -113,6 +123,8 @@ i#group_icon {
 
   #logo {
     display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
   }
   #logo img {
     border-radius: 50%;
