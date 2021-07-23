@@ -182,3 +182,36 @@ body {
 }
 
 
+@media only screen and (min-width: 768px) {
+
+  .about-section p {
+    width: 75%;
+  }
+
+  .header__second {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.3em;
+    font-size: 2.5em;
+  }
+  
+  #body-heading {
+    position: relative;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+  }
+  
+  #body-heading img {
+    width: 26em;
+  }
+
+  .feature__item {
+    margin: 1em 4em;
+    border-radius: 1em;
+  }
+
+}
