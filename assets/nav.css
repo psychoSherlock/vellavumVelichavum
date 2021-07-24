@@ -161,6 +161,16 @@ i#group_icon {
 
   }
 
+  .nav__link:hover .nav__icon {
+    transform: scale(1.2);
+    transition: transform ease-in-out 100ms;
+  }
+
+
+  .nav__link:focus {
+    outline: none;
+  }
+
 
 
 }
