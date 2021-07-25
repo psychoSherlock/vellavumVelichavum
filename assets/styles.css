@@ -15,6 +15,8 @@
   --purple-like:rgba(129, 2, 247, 0.96);
 
 }
+
+
 /*
 html {
   scroll-behavior: smooth;
@@ -48,7 +50,7 @@ body {
   /* background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
 
-  background-image: url("/images/solar/solar_panel.jpg");
+  background-image: url("/images/panel1.jpg");
 
   margin-top: -20px;
   text-align: center;
@@ -249,6 +251,10 @@ height: 100%;
 }
 
 
+.contact__method a:hover {
+  color: var(--pink-like);
+}
+
 
 .footer {
   height: fit-content;
@@ -269,6 +275,8 @@ height: 100%;
   text-decoration: none;
   color: var(--dark-bg);
 }
+
+
 
 .footer_items a:hover{
 
@@ -314,6 +322,10 @@ height: 100%;
 }
 
 
+
+.social_icons {
+  display: block;
+}
 
 
 
@@ -364,3 +376,105 @@ height: 100%;
 
 }
 
+
+@media screen and  (min-width: 1150px) {
+  #body-heading {
+    clip-path: polygon(0px 0px, 100% 0px, 100% 99.41%, 1px 292px);
+    background-size: 100% auto;
+  }
+}
+
+
+.social-container {
+  padding-bottom: 4em;
+}
+
+
+
+
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.smGlobalBtn { /* global button class */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+.facebookBtn:hover{
+
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* whatsapp button class*/
+.whatsappBtn{
+    background: #25d366;
+}
+
+.whatsappBtn:before{
+      font-family: "FontAwesome";
+      content: "\f232"; /* add  whatsapp icon */
+      
+}
+
+.whatsappBtn:hover{
+      color: #25d366;
+      background: #fff;
+      border-color: #25d366;
+}
+
+
+
+
+
+/*InterSection animation*/
+
+.slide_from_left {
+  animation-name: from-left;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+
+  -webkit-animation-name: from-left;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes from-left {
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}

@@ -5,11 +5,11 @@ slideOptions = {
   type: "loop",
   heightRatio: 0.5,
   autoplay: true,
-  interval: 2000,
+  interval: 2300,
   pauseOnFocus: false,
   speed: 1000,
   arrows: false,
-  pauseOnHover:false,
+  pauseOnHover:true,
 };
 
 var elms = document.getElementsByClassName("splide");

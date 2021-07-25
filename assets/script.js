@@ -44,3 +44,23 @@ $(document).ready(function() {// onready
 
 //-----------------Nav on scroll-------------------------------
 
+// Intersection observer APi
+
+function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    entry.target.classList.toggle('slide_from_left')
+    console.log('toggled')
+    
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+
+observer.observe(document.getElementById('contact'));
