@@ -45,3 +45,27 @@ $(document).ready(function() {// onready
 //-----------------Nav on scroll-------------------------------
 
 // Intersection observer APi
+
+
+const elements = document.querySelectorAll('.header__second ') //select all elements
+
+const options = {} //intersection options
+
+
+const observer = new IntersectionObserver(function (entries,observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting){
+      return//do nothing if not intersecting
+    }
+    console.log(entry.target) //else
+    entry.target.classList.toggle('slide_from_left')
+    observer.unobserve(entry.target)
+  })
+  
+},options) //callback, options
+
+
+elements.forEach(section => {
+  observer.observe(section);
+});
+

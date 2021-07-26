@@ -132,11 +132,11 @@ body {
     text-align: center;
     color: var(--purple-like);
 
-    
+/*     
     animation-name: fade-text;
     animation-duration:1500ms;
     animation-direction: forwards;
-    position:relative;
+    position:relative; */
 
 }
 
@@ -444,6 +444,7 @@ height: 100%;
       font-family: "FontAwesome";
       content: "\f232"; /* add  whatsapp icon */
       
+      
 }
 
 .whatsappBtn:hover{
@@ -453,22 +454,23 @@ height: 100%;
 }
 
 
-
-
+.header__second{
+  opacity: 0;
+}
 
 /*InterSection animation*/
 
+
 .slide_from_left {
   animation-name: from-left;
-  animation-duration: 3s;
+  animation-duration: 1.4s;
   animation-fill-mode: forwards;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
 
   -webkit-animation-name: from-left;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1.4s;
   -webkit-animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @keyframes from-left {
