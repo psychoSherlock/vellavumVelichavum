@@ -69,3 +69,23 @@ elements.forEach(section => {
   observer.observe(section);
 });
 
+
+
+
+
+// Manage icons that fail to load
+
+
+const navIcons = document.querySelectorAll('.material-icons')
+
+
+
+$(window).on('load',function() {
+
+  navIcons.forEach(icon => {
+    icon.style.opacity = 1
+  })
+
+    
+});
+

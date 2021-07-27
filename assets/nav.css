@@ -9,6 +9,14 @@
   --little-heading: "Encode Sans SC", sans-serif;
 }
 
+
+
+material-icons {
+  opacity: 0;
+}
+
+
+
 #logo {
   display: none;
 }
