@@ -79,7 +79,6 @@ elements.forEach(section => {
 const navIcons = document.querySelectorAll('.material-icons')
 
 
-
 $(window).on('load',function() {
 
   navIcons.forEach(icon => {
