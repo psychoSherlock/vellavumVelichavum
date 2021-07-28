@@ -79,7 +79,6 @@ elements.forEach(section => {
 const navIcons = document.querySelectorAll('.material-icons')
 
 
-
 $(window).on('load',function() {
 
   navIcons.forEach(icon => {
@@ -89,3 +88,34 @@ $(window).on('load',function() {
     
 });
 
+//------------------Buttons to whatsapp---------------------
+
+const waMsg = "Hello sir, I am visiting from your website. I wanted to buy the product "
+
+function urlEncode(product) {
+  return encodeURI(waMsg + product + " which I saw on your website.")
+}
+
+
+function sendWhatsapp(message) {
+  window.open("https://wa.me/919496315291?text=" + message, "_blank");
+}
+
+//const fBtn = document.getElementById('first-btn') //change this
+
+//fBtn.addEventListener('click', function () {
+//  var product = fBtn.getAttribute('product')
+//  var message = sendWhatsapp(urlEncode(product))
+//})
+
+
+const buyBtn = document.querySelectorAll('.buy-btn');
+
+buyBtn.forEach(el => el.addEventListener('click', button => {
+  var product = button.target.previousElementSibling.textContent //get attribute from the previous element which is the name of the product. 
+  //Change this if the client asks for the prize element
+  
+  console.log(product)
+  sendWhatsapp(urlEncode(product))
+  
+}));

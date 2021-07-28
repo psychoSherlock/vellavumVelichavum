@@ -21,7 +21,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
       <!--External assets-->
-      <link rel="stylesheet" href="assets/profile_cards.css">
+      <link rel="stylesheet" href="assets/product_cards.css">
       <link rel="stylesheet" href="assets/styles.css">
       <link rel="stylesheet" href="assets/nav.css">
 
@@ -36,6 +36,8 @@
 
    </head>
    <body>
+
+
       <!--👇Navbar👇-->
       <nav class="nav">
 
@@ -53,9 +55,9 @@
          <i class="material-icons nav__icon">build</i>
          <span class="nav__text">Services</span>
          </a>
-         <a href="#team" class="nav__link">
-            <i class="material-icons nav__icon" id="group_icon">groups</i>
-            <span class="nav__text">The Team</span>
+         <a href="#products" class="nav__link">
+            <i class="material-icons nav__icon">shopping_cart</i>
+            <span class="nav__text">Products</span>
          </a>
          <a href="#images" class="nav__link">
          <i class="material-icons nav__icon">photo_library</i>
@@ -67,6 +69,8 @@
          </a>
       </nav>
       <!--☝️Navbar☝️-->
+
+
 
       <div id="body-heading">
          <img src="/images/banner.jpg" alt="NPS vellavum velichavum">
@@ -178,127 +182,101 @@
             </div>
          </div>
 
-         <h2 class="header__second">Members</h2>
-         <div id="profile_cards_container">
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="https://i.stack.imgur.com/kfbSQ.png?s=328&g=1" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Athul Prakash</h4>
-                  <h5>Security Researcher</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:pschosherlock@gmail.com">pschersherlock@gmail.com</a></p>
-               </div>
-            </div>
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="https://www.energy.gov/sites/default/files/styles/full_article_width/public/tesla_portrait_0.jpeg?itok=GnME4zta" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Nikola Tesla</h4>
-                  <h5>Scientist</h5>
-                  <p>Phone: 0369369369</p>
-                  <p>Email: <a href="mailto:nikola@tesla.com">nikola@tesla.com</a></p>
-               </div>
-            </div>
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Elon Musk</h4>
-                  <h5>Tesla Founder</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">elon@tesla.com</a></p>
-               </div>
-            </div>
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-               </div>
-            </div>
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-               </div>
-            </div>
+         <h2 class="header__second" id="products">Products</h2>
 
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+         <div id="product_cards_container">
+
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
                </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+               <div class="product_info">
+                  <h4>Product One</h4>
+                  <button id="first-btn" class="buy-btn">Buy Now</button>
                </div>
             </div>
+            
 
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
+            
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
                </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-               </div>
-            </div>
-
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-               </div>
-            </div>
-
-
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
-               </div>
-            </div>
-
-            <div class="profile_card">
-               <div class="profile_pic_container">
-                  <img src="images/sample/profile.jpg" alt="Staff Member" class="profile-picture">
-               </div>
-               <div class="profile_info">
-                  <h4>Lorem Ipsum</h4>
-                  <h5>Role</h5>
-                  <p>Phone: 1234567890</p>
-                  <p>Email: <a href="mailto:user@example.com">user@example.com</a></p>
+               <div class="product_info">
+                  <h4>Product Two</h4>
+                  <button class="buy-btn">Buy Now</button>
                </div>
             </div>
 
             
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
+               </div>
+               <div class="product_info">
+                  <h4>Product Three</h4>
+                  <button class="buy-btn">Buy Now</button>
+               </div>
+            </div>
+
+
+            
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
+               </div>
+               <div class="product_info">
+                  <h4>First btn</h4>
+                  <button class="buy-btn">Buy Now</button>
+               </div>
+            </div>
+
+            
+            
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
+               </div>
+               <div class="product_info">
+                  <h4>First btn</h4>
+                  <button class="buy-btn">Buy Now</button>
+               </div>
+            </div>
+
+            
+
+            
+            
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
+               </div>
+               <div class="product_info">
+                  <h4>First btn</h4>
+                  <button class="buy-btn">Buy Now</button>
+               </div>
+            </div>
+
+            
+
+            
+            
+            <div class="product_card">
+               <div class="product_pic_container">
+                  <img src="/images/products/ups-battery.jpg" alt="Product" class="product-picture">
+               </div>
+               <div class="product_info">
+                  <h4>First btn</h4>
+                  <button class="buy-btn">Buy Now</button>
+               </div>
+            </div>
+
+            
+            
          </div>
+
+         
+
       <div class="break"></div>
       <div class="images-container">
          <div >

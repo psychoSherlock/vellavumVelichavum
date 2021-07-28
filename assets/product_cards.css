@@ -1,96 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-#profile_cards_container {
+#product_cards_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     background-color: white;
     padding-bottom: 3em;
 }
 
-.profile_pic_container {
-    border-bottom: 3px solid rgb(114, 22, 233);
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+.product_pic_container {
     
-    /*ℹ️ This should be same as the border-radius for profile_card div*/
+    /*ℹ️ This should be same as the border-radius for product_card div*/
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
     height: 11em;
     position: relative;
+    border-bottom: 2px ridge var(--pink-like)
 }
 
-.profile_pic_container img {
+.product_pic_container img {
     position: absolute; /*For centering */
     left: 50%;
     transform: translate(-50%, 0%);
 
 
-    border-radius: 50%;
-    border: 3px solid #d00000;
-    height: 8em;
-    margin-top: 1.3em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 100%;
+    width: 100%;
 }
 
-.profile_card {
-    width: 76%;
+.product_card {
+    width: 60%;
     border-radius: 1.3em;
-    /*ℹ️ This should be same as the border-radius for profile_pic_container div*/
+    /*ℹ️ This should be same as the border-radius for product_pic_container div*/
     margin: 1em 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transition: transform 500ms ease;
 }
 
-.profile_card:hover {
+.product_card:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform: translateY(-3%);
     cursor: pointer;
 }
 
 
-.profile_info {
+.product_info {
     text-align: center;
     padding: 3px;
 }
 
 
-.profile_info h4,h5 {
+.product_info h4 {
     font-family: 'Nunito', sans-serif;
 }
-.profile_info h4 {
+
+.product_info h4 {
     font-size: 1.5rem;
     margin-top: 10px !important;
     color: #2D1E2F;
     overflow-wrap: break-word;
 }
 
-.profile_info h5 {
-    font-size: 1.2rem;
-    color: #F72C25;
-    
-}
-
-.profile_info p{
+.product_disc{
     font-family: 'Ubuntu', sans-serif;
+    padding: 0 0.5em;
 }
-
-.profile_info p:last-child {
-    font-size: 0.9em;
-    margin-bottom: 2em;
-    overflow-wrap: break-word;
-}
-.profile_info p a{
-    text-decoration: none;
-}
-
-.profile_info p a:hover{
-    text-decoration: none;
-    color: rgb(212, 28, 212);
-}
-
-
-
 
 
 
@@ -98,14 +75,14 @@
 /*---------------------------DESKTOP DEVICES-------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
-    .profile_card {
-        width: 24%; /*May need to change this for larger desktop*/
-        min-width: 20%;
+    .product_card {
+        width: 20%; /*May need to change this for larger desktop*/
+        min-width: 19%;
         margin: 1em 1em;
         min-height: fit-content;
     }
 
-    #profile_cards_container {
+    #product_cards_container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -113,4 +90,30 @@
 
 
 
+}
+
+
+
+
+
+.buy-btn {
+    background-color: #f72585;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10em;
+    border: 1px solid #f72585;
+    transition: background-color 150ms ease;
+    font-family: var(--bebas);
+    font-size: large;
+    margin-bottom: 2em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.buy-btn:hover {
+    background-color: white;
+    color: #f72585;
+    cursor: pointer;
 }
