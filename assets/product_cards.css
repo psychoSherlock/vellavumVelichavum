@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 #product_cards_container {
     display: flex;
@@ -55,7 +56,7 @@
 
 
 .product_info h4 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .product_info h4 {
