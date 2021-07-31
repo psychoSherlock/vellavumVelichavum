@@ -3,9 +3,9 @@
 //------------------Buttons to whatsapp---------------------
 
 const waMsg = "Hello sir, I am visiting from your website. I wanted to buy the product "
-
+const productType = document.getElementsByClassName('product_type')[0].getAttribute('ptype')
 function urlEncode(product) {
-  return encodeURI(waMsg + product + " which I saw on your website.")
+  return encodeURI(waMsg + product + " " + productType+ " which I saw on your website.")
 }
 
 

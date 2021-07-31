@@ -114,6 +114,7 @@
 
 
 .buy-btn:hover {
+    
     background-color: white;
     color: #f72585;
     cursor: pointer;
