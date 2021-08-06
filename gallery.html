@@ -70,38 +70,73 @@
      <!--☝️Navbar☝️-->
 
 
+     <h1 class="header__second">Gallery</h1>
 
 
 
      <div id="image_gallery">
          <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
+         <img src="/images/gallery/002.jpg">
+         <img src="/images/gallery/team-rain1.jpg" alt="">
+         <img src="/images/gallery/003.jpg" alt="">
+         <img src="/images/gallery/004.jpg" alt="">
+         <img src="/images/gallery/005.jpg" alt="">
+         <img src="/images/solar/solar1.jpg" alt="">
+         <img src="/images/lab/lab_out_full.jpg" alt="">
+         <img src="/images/gallery/006.jpg" alt="">
+         <img src="/images/lab/lab_inside_pic.jpg" alt="">
+         <img src="/images/lab/lab_products_full.jpg" alt="">
+         <img src="/images/gallery/007.jpg" alt="">
+         <img src="/images/lab/lab_lights_creative.jpg" alt="">
+         <img src="/images/gallery/havels_water-1.jpg" alt="">
+         <img src="/images/team/team-rain.jpg" alt="">
+         <img src="/images/gallery/hel_water-1.jpg" alt="">
+         <img src="/images/gallery/line-man1.jpg" alt="">
+         <img src="/images/team/1.jpg" alt="">
+         <img src="/images/team/2.jpg" alt="">
+         <img src="/images/main/001.jpg" alt="">
+         <img src="/images/main/002.jpg" alt="">
+         <img src="/images/main/000.jpg" alt="">
+         <img src="/images/main/solar_panel_roof-work.jpg" alt="">
+         <img src="/images/solar/solar_panel.jpg" alt="">
      </div>
 
 
 
 
 </body>
+<script src="/assets/external/jquery.min.js"></script>
+
 <script>
-    shakeTimeOut = 5000
+   
+
+const elements = document.querySelectorAll('.header__second ') //select all elements
+
+const options = {} //intersection options
+
+
+const observer = new IntersectionObserver(function (entries,observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting){
+      return//do nothing if not intersecting
+    }
+    console.log(entry.target) //else
+    entry.target.classList.toggle('slide_from_left')
+    observer.unobserve(entry.target)
+  })
+  
+},options) //callback, options
+
+
+elements.forEach(section => {
+  observer.observe(section);
+});
+
+
+
+//shake contacts icon every x seconds
+
+shakeTimeOut = 5000
 
 const contactIcon = document.getElementById('contact__icon')
 
@@ -110,5 +145,33 @@ setInterval(function () {
     contactIcon.classList.toggle('shake')
 },shakeTimeOut)
 
+//-------------------------------------
+
+
+
+// Manage icons that fail to load
+
+
+const navIcons = document.querySelectorAll('.material-icons')
+
+
+$(window).on('load',function() {
+
+  navIcons.forEach(icon => {
+    icon.style.opacity = 1
+  })
+
+    
+});
+
+
+
+
+
+
+
+
 </script>
+
+
 </html>
