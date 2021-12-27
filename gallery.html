@@ -1,262 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
+    <title>Vellavum Velichavum: Products</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <title>Vellavum Velichavum: Products</title>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--OG TAGS-->
+    <meta property="og:title" content="Vellavum Velichavum Kelakam: Gallery" />
+    <meta property="og:site_name" content="NPSKelakam - Gallery" />
+    <meta property="og:url" content="https://npskelakam.in/gallery.html" />
+    <meta
+      property="og:description"
+      content="View images and memmories of NPSKelakam, Trusted energy equipment dealers in Kerala"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://npskelakam.in/images/banner.jpg"
+    />
 
-      <!--OG TAGS-->
+    <!--OG TAGS-->
 
-      
-      <!--OG TAGS-->
+    <!--External Assets-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
+    <!--External assets-->
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/nav.css" />
 
+    <!--Favicon-->
 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon//site.webmanifest" />
+  </head>
 
-      <!--External Assets-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-      
-      <!--External assets-->
-      <link rel="stylesheet" href="/assets/styles.css">
-      <link rel="stylesheet" href="/assets/nav.css">
+  <style>
+    #image_gallery {
+      line-height: 0;
+      -webkit-column-count: 5;
+      -webkit-column-gap: 0px;
+      -moz-column-count: 5;
+      -moz-column-gap: 0px;
+      column-count: 5;
+      column-gap: 0px;
+    }
+    #image_gallery img {
+      width: 100% !important;
+      height: auto !important;
+      padding: 0.1em 0;
+    }
+    #image_gallery {
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-      <!--Favicon-->
+    @media (max-width: 1000px) {
+      #image_gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+      }
+    }
+    @media (max-width: 800px) {
+      #image_gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+      }
+    }
+    @media (max-width: 400px) {
+      #image_gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+      }
+    }
 
-      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-      <link rel="manifest" href="/images/favicon//site.webmanifest">
+    @media only screen and (min-width: 768px) {
+      #view_more a {
+        width: 50%;
+      }
 
+      #image_gallery {
+        line-height: 0;
+        -webkit-column-count: 0;
+        -webkit-column-gap: 0px;
+        -moz-column-count: 0;
+        -moz-column-gap: 0px;
+        column-count: 0;
+        column-gap: 0px;
+      }
+      #image_gallery img {
+        width: 32% !important;
+        height: 23em !important;
+        padding: 0.3em;
+        cursor: pointer;
+      }
+      #image_gallery img:hover,
+      img:active {
+        animation: changeOutline 2s ease;
+        animation-iteration-count: infinite;
+        outline: 2px solid salmon;
+      }
 
+      @keyframes changeOutline {
+        0% {
+          outline-color: var(--pink-like);
+        }
+        40% {
+          outline-color: green;
+        }
+        70% {
+          outline-color: var(--purple-like);
+        }
+        100% {
+          outline-color: var(--pink-like);
+        }
+      }
 
-   </head>
+      #image_gallery {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 
-   <style>
+  <body>
+    <!--👇Navbar👇-->
+    <nav class="nav">
+      <a href="/" id="logo">
+        <img src="/images/logo.png" alt="NPS LOGO" />
+        <span id="logo__text">NPS</span>
+      </a>
 
-#image_gallery {    
-  line-height: 0;       
-   -webkit-column-count: 5;    
-   -webkit-column-gap: 0px;    
-   -moz-column-count: 5;
-   -moz-column-gap: 0px;
-    column-count: 5;    
-    column-gap: 0px;    
-}  
-#image_gallery img {    
-  width: 100% !important;    
-  height: auto !important;  
-  padding: 0.1em 0;
-}  
-#image_gallery{    
-  display:inline-block;    
-  margin-right: auto;    
-  margin-left: auto;  
-}
-
-@media (max-width: 1000px) {
-  #image_gallery {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
- }  
-@media (max-width: 800px) {
-  #image_gallery {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
- }  
-@media (max-width: 400px) {
-  #image_gallery {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-   column-count:        1;
-  }
- }
-
-@media only screen and (min-width: 768px) {
-  #view_more a{
-    width: 50%;
-  }
-
-  #image_gallery {    
-    line-height: 0;       
-    -webkit-column-count: 0; 
-    -webkit-column-gap: 0px;    
-    -moz-column-count: 0;
-    -moz-column-gap: 0px;
-      column-count: 0;
-      column-gap: 0px;    
-  }  
-  #image_gallery img {    
-    width: 32% !important;
-    height: 23em !important;
-    padding: 0.3em;
-    cursor: pointer;
-  }
-  #image_gallery img:hover, img:active {
-  animation: changeOutline 2s ease;
-  animation-iteration-count: infinite;
-  outline: 2px solid salmon;
-  }
-  
-  @keyframes changeOutline {
-    0%{outline-color: var(--pink-like)}
-    40%{outline-color: green;}
-    70%{outline-color: var(--purple-like);}
-    100%{outline-color: var(--pink-like);}
-  }
-  
-  #image_gallery{    
-    display:flex;    
-    flex-wrap:wrap;
-    
-  }
-
-}
-   </style>
-
-   <body>
-       
-
-      <!--👇Navbar👇-->
-      <nav class="nav">
-
-        <a href="/" id="logo">
-           <img src="/images/logo.png" alt="NPS LOGO">
-           <span id="logo__text">NPS</span>
-        </a>
-
-
-        <a href="/index.html#body-heading" class="nav__link">
+      <a href="/index.html#body-heading" class="nav__link">
         <i class="material-icons nav__icon">home</i>
         <span class="nav__text">Home</span>
-        </a>
-        <a href="/index.html#services" class="nav__link">
+      </a>
+      <a href="/index.html#services" class="nav__link">
         <i class="material-icons nav__icon">build</i>
         <span class="nav__text">Services</span>
-        </a>
-        <a href="/index.html#products" class="nav__link">
-           <i class="material-icons nav__icon">shopping_cart</i>
-           <span class="nav__text">Products</span>
-        </a>
-        <a href="/index.html#images" class="nav__link  nav_active">
+      </a>
+      <a href="/index.html#products" class="nav__link">
+        <i class="material-icons nav__icon">shopping_cart</i>
+        <span class="nav__text">Products</span>
+      </a>
+      <a href="/index.html#images" class="nav__link nav_active">
         <i class="material-icons nav__icon">photo_library</i>
         <span class="nav__text">Works</span>
-        </a>
-        <a href="/index.html#contact" class="nav__link">
+      </a>
+      <a href="/index.html#contact" class="nav__link">
         <i class="material-icons nav__icon" id="contact__icon">call</i>
         <span class="nav__text">Contact</span>
-        </a>
-     </nav>
-     <!--☝️Navbar☝️-->
+      </a>
+    </nav>
+    <!--☝️Navbar☝️-->
 
+    <h1 class="header__second">Gallery</h1>
 
-     <h1 class="header__second">Gallery</h1>
+    <div id="image_gallery">
+      <img src="/images/gallery/001.jpg" alt="Gallery Image" />
+      <img src="/images/gallery/002.jpg" />
+      <img src="/images/gallery/team-rain1.jpg" alt="" />
+      <img src="/images/gallery/003.jpg" alt="" />
+      <img src="/images/gallery/004.jpg" alt="" />
+      <img src="/images/gallery/005.jpg" alt="" />
+      <img src="/images/solar/solar1.jpg" alt="" />
+      <img src="/images/lab/lab_out_full.jpg" alt="" />
+      <img src="/images/gallery/006.jpg" alt="" />
+      <img src="/images/lab/lab_inside_pic.jpg" alt="" />
+      <img src="/images/lab/lab_products_full.jpg" alt="" />
+      <img src="/images/gallery/007.jpg" alt="" />
+      <img src="/images/lab/lab_lights_creative.jpg" alt="" />
+      <img src="/images/gallery/havels_water-1.jpg" alt="" />
+      <img src="/images/team/team-rain.jpg" alt="" />
+      <img src="/images/gallery/hel_water-1.jpg" alt="" />
+      <img src="/images/gallery/line-man1.jpg" alt="" />
+      <img src="/images/team/1.jpg" alt="" />
+      <img src="/images/team/2.jpg" alt="" />
+      <img src="/images/main/001.jpg" alt="" />
+      <img src="/images/main/002.jpg" alt="" />
+      <img src="/images/main/000.jpg" alt="" />
+      <img src="/images/main/solar_panel_roof-work.jpg" alt="" />
+      <img src="/images/solar/solar_panel.jpg" alt="" />
+    </div>
+  </body>
+  <script src="/assets/external/jquery.min.js"></script>
 
+  <script>
+    const elements = document.querySelectorAll(".header__second "); //select all elements
 
+    const options = {}; //intersection options
 
-     <div id="image_gallery">
-         <img  src="/images/gallery/001.jpg" alt="Gallery Image">
-         <img src="/images/gallery/002.jpg">
-         <img src="/images/gallery/team-rain1.jpg" alt="">
-         <img src="/images/gallery/003.jpg" alt="">
-         <img src="/images/gallery/004.jpg" alt="">
-         <img src="/images/gallery/005.jpg" alt="">
-         <img src="/images/solar/solar1.jpg" alt="">
-         <img src="/images/lab/lab_out_full.jpg" alt="">
-         <img src="/images/gallery/006.jpg" alt="">
-         <img src="/images/lab/lab_inside_pic.jpg" alt="">
-         <img src="/images/lab/lab_products_full.jpg" alt="">
-         <img src="/images/gallery/007.jpg" alt="">
-         <img src="/images/lab/lab_lights_creative.jpg" alt="">
-         <img src="/images/gallery/havels_water-1.jpg" alt="">
-         <img src="/images/team/team-rain.jpg" alt="">
-         <img src="/images/gallery/hel_water-1.jpg" alt="">
-         <img src="/images/gallery/line-man1.jpg" alt="">
-         <img src="/images/team/1.jpg" alt="">
-         <img src="/images/team/2.jpg" alt="">
-         <img src="/images/main/001.jpg" alt="">
-         <img src="/images/main/002.jpg" alt="">
-         <img src="/images/main/000.jpg" alt="">
-         <img src="/images/main/solar_panel_roof-work.jpg" alt="">
-         <img src="/images/solar/solar_panel.jpg" alt="">
-     </div>
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return; //do nothing if not intersecting
+        }
+        console.log(entry.target); //else
+        entry.target.classList.toggle("slide_from_left");
+        observer.unobserve(entry.target);
+      });
+    }, options); //callback, options
 
+    elements.forEach((section) => {
+      observer.observe(section);
+    });
 
+    //shake contacts icon every x seconds
 
+    shakeTimeOut = 5000;
 
-</body>
-<script src="/assets/external/jquery.min.js"></script>
+    const contactIcon = document.getElementById("contact__icon");
 
-<script>
-   
+    setInterval(function () {
+      contactIcon.classList.toggle("shake");
+    }, shakeTimeOut);
 
-const elements = document.querySelectorAll('.header__second ') //select all elements
+    //-------------------------------------
 
-const options = {} //intersection options
+    // Manage icons that fail to load
 
+    const navIcons = document.querySelectorAll(".material-icons");
 
-const observer = new IntersectionObserver(function (entries,observer) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting){
-      return//do nothing if not intersecting
-    }
-    console.log(entry.target) //else
-    entry.target.classList.toggle('slide_from_left')
-    observer.unobserve(entry.target)
-  })
-  
-},options) //callback, options
-
-
-elements.forEach(section => {
-  observer.observe(section);
-});
-
-
-
-//shake contacts icon every x seconds
-
-shakeTimeOut = 5000
-
-const contactIcon = document.getElementById('contact__icon')
-
-
-setInterval(function () {
-    contactIcon.classList.toggle('shake')
-},shakeTimeOut)
-
-//-------------------------------------
-
-
-
-// Manage icons that fail to load
-
-
-const navIcons = document.querySelectorAll('.material-icons')
-
-
-$(window).on('load',function() {
-
-  navIcons.forEach(icon => {
-    icon.style.opacity = 1
-  })
-
-    
-});
-
-
-
-
-
-
-
-
-</script>
-
-
+    $(window).on("load", function () {
+      navIcons.forEach((icon) => {
+        icon.style.opacity = 1;
+      });
+    });
+  </script>
 </html>
