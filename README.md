@@ -2,6 +2,6 @@
 
 ### To DO
 
-[ ]OG meta tags
-[ ]Add meta tags and others to other pages
-[x] Add robots.txt
+- [x] OG meta tags
+- [x] Add meta tags and others to other pages
+- [x] Add robots.txt
