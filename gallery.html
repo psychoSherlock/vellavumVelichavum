@@ -68,6 +68,8 @@
       width: 100% !important;
       height: auto !important;
       padding: 0.1em 0;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     .image_gallery {
       display: inline-block;
@@ -301,6 +303,7 @@
         image.src = `/images/gallery/page2/${i}.jpg`;
         document.getElementById("page2").appendChild(image);
       }
+      addImgLink();
     };
 
     const viewMore = document
@@ -311,6 +314,17 @@
           loadNewImages(30);
         }, 1000);
       });
+
+    const addImgLink = () => {
+      let allImages = document.getElementsByTagName("img");
+      for (var img = 0; img < allImages.length; img++) {
+        var thisImage = allImages[img];
+
+        thisImage.setAttribute("onclick", "window.open(this.src, '_self')");
+        // console.log(thisImage.src);
+      }
+    };
+    addImgLink();
   </script>
 
   <script>
